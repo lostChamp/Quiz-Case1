@@ -66,6 +66,7 @@ section {
 
 .quiz__questions {
     width: 36%;
+    z-index: 1000;
 }
 
 .question {
@@ -183,6 +184,7 @@ section {
 .teeth__questions {
     font-size: 12px;
     text-align: center;
+    height: auto;
     position: absolute;
     top: 260px;
     right: 0;
@@ -204,9 +206,17 @@ section {
     margin-right: 5px;
 }
 
-.tooth-schema {
-    position: relative;
-    display: inline-block;
+.tooth__schema {
+
+}
+
+.tooth-checkboxes {
+    height: 918px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .tooth {
@@ -476,7 +486,7 @@ section {
 }
 /* Низ левая часть */
 
-.tooth__checkbox:checked+ .tooth__mark:before {
+.tooth__checkbox:checked + .tooth__mark:before {
     background: #59c9a4;
     opacity: 0.9;
 }
