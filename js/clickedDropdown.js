@@ -22,6 +22,8 @@ document.addEventListener("click", (e) => {
         if(dropdowns.length - 1 === numberRadio) {
             console.log("all");
         }else {
+            const arrow = document.getElementById("arrow_open_close_" + (numberRadio + 2));
+            arrow.src = "img/arrow.png";
             dropdowns[numberRadio + 1].classList.remove("not__available");
         }
     }
