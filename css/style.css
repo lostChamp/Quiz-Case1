@@ -84,6 +84,7 @@ section {
 .dropdown {
     background-image: linear-gradient(256deg, rgba(5, 188, 129, 1) 0%, rgba(57, 156, 108, 1) 27%, rgba(5, 188, 129, 1) 100%);
     border-radius: 35px;
+    white-space: nowrap;
     color: rgb(255, 255, 255);
     padding: 20px 0;
     font-size: 14px;
@@ -156,6 +157,8 @@ section {
 }
 
 .close__img {
+    transition-property: all;
+    transition: all ease 0.2s;
     transform: rotate(180deg);
 }
 
@@ -163,7 +166,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50%;
+    margin-left: auto;
+    margin-right: 15px;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     width: 30px;
