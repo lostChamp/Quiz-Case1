@@ -184,7 +184,7 @@ section {
     font-size: 12px;
     text-align: center;
     position: absolute;
-    top: 275px;
+    top: 260px;
     right: 0;
     left: 635px;
     bottom: 0;
@@ -202,5 +202,276 @@ section {
 .checkbox__teeth {
     margin-right: 5px;
 }
+
+.tooth-schema {
+    position: relative;
+    display: inline-block;
+}
+
+.tooth {
+    position: absolute;
+}
+
+.tooth__checkbox {
+    /*display: none;*/
+}
+
+.tooth__mark {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.tooth__mark:before {
+    /*content: '';*/
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: transparent;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.5rem 0 0 -0.5rem;
+}
+
+/* Верх левая часть */
+.tooth:nth-child(1) {
+    width: 2rem;
+    height: 2rem;
+    top: 12.5%;
+    right: 25.5%;
+}
+
+.tooth:nth-child(2) {
+    width: 2rem;
+    height: 2rem;
+    top: 14%;
+    right: 28%;
+}
+
+.tooth:nth-child(3) {
+    width: 2rem;
+    height: 2rem;
+    top: 16%;
+    right: 29.8%;
+}
+
+.tooth:nth-child(4) {
+    width: 2rem;
+    height: 2rem;
+    top: 19%;
+    right: 31%;
+}
+
+.tooth:nth-child(5) {
+    width: 2rem;
+    height: 2rem;
+    top: 22%;
+    right: 32%;
+}
+
+.tooth:nth-child(6) {
+    width: 2rem;
+    height: 2rem;
+    top: 26%;
+    right: 32.8%;
+}
+
+.tooth:nth-child(7) {
+    width: 2rem;
+    height: 2rem;
+    top: 30.8%;
+    right: 33.5%;
+}
+
+.tooth:nth-child(8) {
+    width: 2rem;
+    height: 2rem;
+    top: 35%;
+    right: 34%;
+}
+
+/* Верх левая часть */
+
+/* Верх правая часть */
+
+.tooth:nth-child(9) {
+    width: 2rem;
+    height: 2rem;
+    top: 12.5%;
+    right: 22.5%;
+}
+
+.tooth:nth-child(10) {
+    width: 2rem;
+    height: 2rem;
+    top: 14%;
+    right: 20%;
+}
+
+.tooth:nth-child(11) {
+    width: 2rem;
+    height: 2rem;
+    top: 16%;
+    right: 18.3%;
+}
+
+.tooth:nth-child(12) {
+    width: 2rem;
+    height: 2rem;
+    top: 19%;
+    right: 17%;
+}
+
+.tooth:nth-child(13) {
+    width: 2rem;
+    height: 2rem;
+    top: 22%;
+    right: 16%;
+}
+
+.tooth:nth-child(14) {
+    width: 2rem;
+    height: 2rem;
+    top: 26%;
+    right: 15.2%;
+}
+
+.tooth:nth-child(15) {
+    width: 2rem;
+    height: 2rem;
+    top: 30.8%;
+    right: 14.5%;
+}
+
+.tooth:nth-child(16) {
+    width: 2rem;
+    height: 2rem;
+    top: 35%;
+    right: 14%;
+}
+
+/* Верх правая часть */
+
+/* Низ правая часть */
+
+.tooth:nth-child(17) {
+    width: 2rem;
+    height: 2rem;
+    top: 41.3%;
+    right: 14.5%;
+}
+
+.tooth:nth-child(18) {
+    width: 2rem;
+    height: 2rem;
+    top: 46%;
+    right: 14.6%;
+}
+
+.tooth:nth-child(19) {
+    width: 2rem;
+    height: 2rem;
+    top: 51.3%;
+    right: 15.4%;
+}
+
+.tooth:nth-child(20) {
+    width: 2rem;
+    height: 2rem;
+    top: 55.3%;
+    right: 16.4%;
+}
+
+.tooth:nth-child(21) {
+    width: 2rem;
+    height: 2rem;
+    top: 58.4%;
+    right: 17.8%;
+}
+
+.tooth:nth-child(22) {
+    width: 2rem;
+    height: 2rem;
+    top: 60.9%;
+    right: 19.3%;
+}
+
+.tooth:nth-child(23) {
+    width: 2rem;
+    height: 2rem;
+    top: 62.2%;
+    right: 21.2%;
+}
+
+.tooth:nth-child(24) {
+    width: 2rem;
+    height: 2rem;
+    top: 62.6%;
+    right: 22.95%;
+}
+
+/* Низ правая часть */
+
+/* Низ левая часть */
+
+.tooth:nth-child(25) {
+    width: 2rem;
+    height: 2rem;
+    top: 62.6%;
+    right: 25%;
+}
+
+.tooth:nth-child(26) {
+    width: 2rem;
+    height: 2rem;
+    top: 62.2%;
+    right: 26.9%;
+}
+
+.tooth:nth-child(27) {
+    width: 2rem;
+    height: 2rem;
+    top: 60.9%;
+    right: 28.6%;
+}
+
+.tooth:nth-child(28) {
+    width: 2rem;
+    height: 2rem;
+    top: 58.4%;
+    right: 30.2%;
+}
+
+.tooth:nth-child(29) {
+    width: 2rem;
+    height: 2rem;
+    top: 55.3%;
+    right: 31.6%;
+}
+
+.tooth:nth-child(30) {
+    width: 2rem;
+    height: 2rem;
+    top: 51.3%;
+    right: 32.7%;
+}
+
+.tooth:nth-child(31) {
+    width: 2rem;
+    height: 2rem;
+    top: 46%;
+    right: 33.4%;
+}
+
+.tooth:nth-child(32) {
+    width: 2rem;
+    height: 2rem;
+    top: 41.3%;
+    right: 33.6%;
+}
+/* Низ левая часть */
 
 /* QUIZ */
