@@ -188,6 +188,7 @@ section {
     right: 0;
     left: 635px;
     bottom: 0;
+    z-index: 0;
 }
 
 .middle__zone {
@@ -210,10 +211,11 @@ section {
 
 .tooth {
     position: absolute;
+    z-index: 1;
 }
 
 .tooth__checkbox {
-    /*display: none;*/
+    display: none;
 }
 
 .tooth__mark {
@@ -224,7 +226,7 @@ section {
 }
 
 .tooth__mark:before {
-    /*content: '';*/
+    content: '';
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
@@ -240,57 +242,57 @@ section {
 .tooth:nth-child(1) {
     width: 2rem;
     height: 2rem;
-    top: 12.5%;
-    right: 25.5%;
+    top: 11.7%;
+    right: 26.3%;
 }
 
 .tooth:nth-child(2) {
     width: 2rem;
     height: 2rem;
-    top: 14%;
-    right: 28%;
+    top: 13.2%;
+    right: 28.6%;
 }
 
 .tooth:nth-child(3) {
     width: 2rem;
     height: 2rem;
-    top: 16%;
-    right: 29.8%;
+    top: 15%;
+    right: 30.6%;
 }
 
 .tooth:nth-child(4) {
     width: 2rem;
     height: 2rem;
-    top: 19%;
-    right: 31%;
+    top: 18%;
+    right: 31.8%;
 }
 
 .tooth:nth-child(5) {
     width: 2rem;
     height: 2rem;
-    top: 22%;
-    right: 32%;
+    top: 21.2%;
+    right: 32.7%;
 }
 
 .tooth:nth-child(6) {
     width: 2rem;
     height: 2rem;
-    top: 26%;
-    right: 32.8%;
+    top: 25.2%;
+    right: 33.5%;
 }
 
 .tooth:nth-child(7) {
     width: 2rem;
     height: 2rem;
-    top: 30.8%;
-    right: 33.5%;
+    top: 30%;
+    right: 34.1%;
 }
 
 .tooth:nth-child(8) {
     width: 2rem;
     height: 2rem;
-    top: 35%;
-    right: 34%;
+    top: 34.4%;
+    right: 34.5%;
 }
 
 /* Верх левая часть */
@@ -300,57 +302,57 @@ section {
 .tooth:nth-child(9) {
     width: 2rem;
     height: 2rem;
-    top: 12.5%;
-    right: 22.5%;
+    top: 11.7%;
+    right: 23.2%;
 }
 
 .tooth:nth-child(10) {
     width: 2rem;
     height: 2rem;
-    top: 14%;
-    right: 20%;
+    top: 13.2%;
+    right: 20.8%;
 }
 
 .tooth:nth-child(11) {
     width: 2rem;
     height: 2rem;
-    top: 16%;
-    right: 18.3%;
+    top: 15%;
+    right: 18.9%;
 }
 
 .tooth:nth-child(12) {
     width: 2rem;
     height: 2rem;
-    top: 19%;
-    right: 17%;
+    top: 18%;
+    right: 17.5%;
 }
 
 .tooth:nth-child(13) {
     width: 2rem;
     height: 2rem;
-    top: 22%;
-    right: 16%;
+    top: 21.2%;
+    right: 16.7%;
 }
 
 .tooth:nth-child(14) {
     width: 2rem;
     height: 2rem;
-    top: 26%;
-    right: 15.2%;
+    top: 25.2%;
+    right: 15.9%;
 }
 
 .tooth:nth-child(15) {
     width: 2rem;
     height: 2rem;
-    top: 30.8%;
-    right: 14.5%;
+    top: 30%;
+    right: 15.3%;
 }
 
 .tooth:nth-child(16) {
     width: 2rem;
     height: 2rem;
-    top: 35%;
-    right: 14%;
+    top: 34.4%;
+    right: 14.9%;
 }
 
 /* Верх правая часть */
@@ -360,57 +362,57 @@ section {
 .tooth:nth-child(17) {
     width: 2rem;
     height: 2rem;
-    top: 41.3%;
-    right: 14.5%;
+    top: 40.4%;
+    right: 15.2%;
 }
 
 .tooth:nth-child(18) {
     width: 2rem;
     height: 2rem;
-    top: 46%;
-    right: 14.6%;
+    top: 45.2%;
+    right: 15.4%;
 }
 
 .tooth:nth-child(19) {
     width: 2rem;
     height: 2rem;
-    top: 51.3%;
-    right: 15.4%;
+    top: 50.3%;
+    right: 16.1%;
 }
 
 .tooth:nth-child(20) {
     width: 2rem;
     height: 2rem;
-    top: 55.3%;
-    right: 16.4%;
+    top: 54.6%;
+    right: 17.1%;
 }
 
 .tooth:nth-child(21) {
     width: 2rem;
     height: 2rem;
-    top: 58.4%;
-    right: 17.8%;
+    top: 57.4%;
+    right: 18.5%;
 }
 
 .tooth:nth-child(22) {
     width: 2rem;
     height: 2rem;
-    top: 60.9%;
-    right: 19.3%;
+    top: 59.9%;
+    right: 20%;
 }
 
 .tooth:nth-child(23) {
     width: 2rem;
     height: 2rem;
-    top: 62.2%;
-    right: 21.2%;
+    top: 61.2%;
+    right: 21.9%;
 }
 
 .tooth:nth-child(24) {
     width: 2rem;
     height: 2rem;
-    top: 62.6%;
-    right: 22.95%;
+    top: 61.9%;
+    right: 23.7%;
 }
 
 /* Низ правая часть */
@@ -420,58 +422,63 @@ section {
 .tooth:nth-child(25) {
     width: 2rem;
     height: 2rem;
-    top: 62.6%;
-    right: 25%;
+    top: 61.9%;
+    right: 25.75%;
 }
 
 .tooth:nth-child(26) {
     width: 2rem;
     height: 2rem;
-    top: 62.2%;
-    right: 26.9%;
+    top: 61.2%;
+    right: 27.6%;
 }
 
 .tooth:nth-child(27) {
     width: 2rem;
     height: 2rem;
-    top: 60.9%;
-    right: 28.6%;
+    top: 59.9%;
+    right: 29.3%;
 }
 
 .tooth:nth-child(28) {
     width: 2rem;
     height: 2rem;
-    top: 58.4%;
-    right: 30.2%;
+    top: 57.4%;
+    right: 30.8%;
 }
 
 .tooth:nth-child(29) {
     width: 2rem;
     height: 2rem;
-    top: 55.3%;
-    right: 31.6%;
+    top: 54.6%;
+    right: 32.3%;
 }
 
 .tooth:nth-child(30) {
     width: 2rem;
     height: 2rem;
-    top: 51.3%;
-    right: 32.7%;
+    top: 50.3%;
+    right: 33.3%;
 }
 
 .tooth:nth-child(31) {
     width: 2rem;
     height: 2rem;
-    top: 46%;
-    right: 33.4%;
+    top: 45.2%;
+    right: 34%;
 }
 
 .tooth:nth-child(32) {
     width: 2rem;
     height: 2rem;
-    top: 41.3%;
-    right: 33.6%;
+    top: 40.4%;
+    right: 34.5%;
 }
 /* Низ левая часть */
+
+.tooth__checkbox:checked+ .tooth__mark:before {
+    background: #59c9a4;
+    opacity: 0.9;
+}
 
 /* QUIZ */
