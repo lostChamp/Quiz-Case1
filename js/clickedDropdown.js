@@ -16,3 +16,6 @@ document.addEventListener("click", (e) => {
         }
     }
 });
+
+
+console.log(document.getElementById("dropdown_id_questions_1").children);
