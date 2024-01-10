@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+<body>
+    <section class="option__quiz">
+        <div class="content">
+            <img class="quiz__img" src="img/quizBackground.png" alt="">
+            <form class="quiz__form" action="">
+                <div class="wrap">
+                    <div class="quiz__questions">
+                        <h1 class="quiz__title">Имплантация зубов</h1>
+                        <div class="quiz__subtitle">
+                            <p>Для примерного расчета <span class="green__text">стоимости
+                                имплатнации</span> с коронкой &laquo;под ключ&raquo;
+                                в стоматологии Утльтра-Дент просим
+                                ответить на 3 вопроса:</p>
+                        </div>
+                            <div class="quiz__dropdown">
+                                <h3 class="dropdown dropdown__first" id="dropdown_id_1"><span class="number__question">1</span> Какая у вас ситуация?<span class="open__close"><img
+                                        src="img/arrow.png" id="arrow_open_close_1" alt="" class="arrow__img"></span></h3>
+                                <div class="questions first__questions" id="dropdown_id_questions_1">
+                                    <div class="question">
+                                        <input type="radio" name="question_1" value="Есть отсутсвующие зубы" id="no_teeth">
+                                        <label class="label__radio" for="no_teeth">Есть отсутсвующие зубы</label>
+                                    </div>
+
+                                    <div class="question">
+                                        <input type="radio" name="question_1" value="Сейчас съемный протез, хочется оронки" id="need_crown">
+                                        <label class="label__radio" for="need_crown">Сейчас съемный протез, хочется оронки</label>
+                                    </div>
+
+                                    <div class="question">
+                                        <input type="radio" name="question_1" value="Расшатаны зубы" id="shattered">
+                                        <label class="label__radio" for="shattered">Расшатаны зубы</label>
+                                    </div>
+
+                                    <div class="question">
+                                        <input type="radio" name="question_1" value="Есть имплант, нужна коронка" id="need_crown2">
+                                        <label class="label__radio" for="need_crown2">Есть имплант, нужна коронка</label>
+                                    </div>
+
+                                    <div class="question">
+                                        <input type="radio" name="question_1" value="Уже ставил коронку/коронки, хочу заменить" id="there_are_crowns">
+                                        <label class="label__radio" for="there_are_crowns">Уже ставил коронку/коронки, хочу заменить</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quiz__dropdown">
+                                <h3 class="dropdown dropdown__first not__available" id="dropdown_id_2"><span class="number__question">2</span>Каким способом восстанавливаем зубы?</h3>
+                            </div>
+
+                            <div class="quiz__dropdown">
+                                <h3 class="dropdown dropdown__first not__available"><span class="number__question">3</span>Когда планируете начать лечение?</h3>
+                            </div>
+
+                            <div class="submit">
+                                <button type="submit" class="submit__quiz not__available">Рассчитать</button>
+                            </div>
+                    </div>
+
+                    <div class="teeth__question">
+                        <div class="teeth__image">
+                            <img src="img/quizTeeth.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/clickedDropdown.js"></script>
+</body>
+</html>
