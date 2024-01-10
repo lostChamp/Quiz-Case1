@@ -15,7 +15,17 @@ document.addEventListener("click", (e) => {
             arrow.classList.add("close__img");
         }
     }
+
+    if(e.target.type === "radio") {
+        const numberRadio = e.target.name[e.target.name.length - 1] - 1;
+        const dropdowns = document.querySelectorAll(".dropdown");
+        if(dropdowns.length - 1 === numberRadio) {
+            console.log("all");
+        }else {
+            dropdowns[numberRadio + 1].classList.remove("not__available");
+        }
+    }
 });
 
 
-console.log(document.getElementById("dropdown_id_questions_1").children);
+
