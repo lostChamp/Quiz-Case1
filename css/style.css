@@ -114,8 +114,6 @@ section {
     flex-direction: column;
     height: auto;
     margin: 20px 0 60px 20px;
-    transition-property: all;
-    transition: all linear 0.8s;
     opacity: 1;
 }
 
@@ -141,10 +139,16 @@ section {
     padding: 20px 60px;
     font-size: 14px;
     margin-top: 60px;
-    border: none;
+    border: 1px solid rgb(255, 255, 255);
     margin-bottom: 60px;
+    transition-property: all;
+    transition: all ease 1s;
+    pointer-events: none;
 }
 
+.submit__quiz:hover {
+    border: 1px solid black;
+}
 
 .not__available span {
     color: #ababab;

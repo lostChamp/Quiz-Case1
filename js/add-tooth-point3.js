@@ -1,6 +1,5 @@
 
 let toothCheckbox = document.querySelector(".tooth-checkboxes");
-console.log(toothCheckbox);
 let teeth = "";
 
 for(let i = 1; i <= 32; i++) {
