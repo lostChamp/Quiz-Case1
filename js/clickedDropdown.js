@@ -1,13 +1,13 @@
 const form = document.getElementById("form__quiz");
+
 form.addEventListener("click", (e) => {
     if(e.target.className.includes("dropdown") && !e.target.className.includes("not__available")) {
         const dropdownId = e.target.id[e.target.id.length - 1];
         const questionsId = "dropdown_id_questions_" + dropdownId;
+        const questions = document.getElementById(questionsId);
         const arrowId = "arrow_open_close_" + dropdownId;
         const arrow = document.getElementById(arrowId);
-        const questions = document.getElementById(questionsId);
         const questionsClasses = questions.className.split(" ");
-
 
         if(questionsClasses.includes("close")) {
             questions.classList.remove("close");
@@ -31,8 +31,12 @@ form.addEventListener("click", (e) => {
             submitQuizButton.style.pointerEvents = "auto";
         }else {
             const arrow = document.getElementById("arrow_open_close_" + (numberRadio + 1));
+            const questions = document.getElementById("dropdown_id_questions_" + (numberRadio + 1));
             arrow.src = "img/arrow.png";
             dropdowns[numberRadio].classList.remove("not__available");
+            questions.classList.remove("close");
+            arrow.classList.remove("close__img");
+            questions.style.display = "";
         }
     }
 });
