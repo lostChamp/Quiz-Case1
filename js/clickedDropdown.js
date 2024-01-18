@@ -1,4 +1,5 @@
 const form = document.getElementById("form__quiz");
+const dropdowns = document.querySelectorAll(".dropdown");
 
 form.addEventListener("click", (e) => {
     if(e.target.className.includes("dropdown") && !e.target.className.includes("not__available")) {
@@ -12,13 +13,9 @@ form.addEventListener("click", (e) => {
         if(questionsClasses.includes("close")) {
             questions.classList.remove("close");
             arrow.classList.remove("close__img");
-            questions.style.display = "";
         }else {
             questions.classList.add("close");
             arrow.classList.add("close__img");
-            questions.addEventListener("transitionend", () => {
-                questions.style.display = "none";
-            })
         }
     }
 
@@ -30,13 +27,16 @@ form.addEventListener("click", (e) => {
             submitQuizButton.classList.remove("not__available");
             submitQuizButton.style.pointerEvents = "auto";
         }else {
-            const arrow = document.getElementById("arrow_open_close_" + (numberRadio + 1));
-            const questions = document.getElementById("dropdown_id_questions_" + (numberRadio + 1));
-            arrow.src = "img/arrow.png";
+            const nextArrow = document.getElementById("arrow_open_close_" + (numberRadio + 1));
+            const currArrow = document.getElementById("arrow_open_close_" + (numberRadio));
+            const nextQuestions = document.getElementById("dropdown_id_questions_" + (numberRadio + 1));
+            const currQuestions = document.getElementById("dropdown_id_questions_" + (numberRadio));
+            nextArrow.src = "img/arrow.png";
             dropdowns[numberRadio].classList.remove("not__available");
-            questions.classList.remove("close");
-            arrow.classList.remove("close__img");
-            questions.style.display = "";
+            nextQuestions.classList.remove("close");
+            currQuestions.classList.add("close");
+            nextArrow.classList.remove("close__img");
+            currArrow.classList.add("close__img");
         }
     }
 });

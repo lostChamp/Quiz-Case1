@@ -46,7 +46,6 @@ section {
 .quiz__subtitle p {
     margin-bottom: 15px;
     white-space: normal;
-    text-align: justify;
     font-size: 27px;
 }
 
@@ -112,17 +111,20 @@ section {
 .questions {
     display: flex;
     flex-direction: column;
-    height: auto;
-    margin: 20px 0 60px 20px;
-    opacity: 1;
+    overflow: hidden;
+    max-height: 300px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transform-origin: top;
+    transition: all 0.8s ease;
 }
 
 .close {
-    transition-property: all;
-    transition: all linear 0.2s;
-    opacity: 0;
-    height: 0;
-    margin: 0 0 0 20px;
+    transition: all 0.5s ease;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-height: 0;
 }
 
 .not__available {
@@ -156,14 +158,10 @@ section {
 
 
 .arrow__img {
-    transition-property: all;
-    transition: all ease 0.8s;
     transform: rotate(180deg);
 }
 
 .close__img {
-    transition-property: all;
-    transition: all ease 0.2s;
     transform: rotate(0deg);
 }
 
